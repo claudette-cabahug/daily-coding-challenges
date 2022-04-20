@@ -6,22 +6,19 @@ If the character appears only once in the input string, replace it with 'x';
 If the character appears several times in the input string, replace it with 'y';
 the function should be case insensitive
 */
-
+let word = 'mission'
 
 function changeWord(word) {
-  let lower = word.toLowerCase()
- 
-  for (let i = 0; i < lower.length; i++) {
-    if (lower.indexOf(lower[i]) != lower.lastIndexOf(lower[i])) {
-    
-    	word = word.toLowerCase().replaceAll(lower[i], 'y')
-      
-    } else {
-    	word = word.toLowerCase().replaceAll(lower[i], 'x')
-    }
-    
+  let result
+
+  // count how many time a letter appears
+
+  // iterate through the word and check count
+  for (let i = 0; i < word.length; i++) {
+   
   }
-  return word
+
+  return result
 }
 
-changeWord(mission)
+console.log(result)
