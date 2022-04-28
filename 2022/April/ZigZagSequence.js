@@ -32,3 +32,5 @@ function findZigZagSequence(intArr) {
 }
 
 console.log(findZigZagSequence([1,2,3,4,5,6,7]))
+console.log(findZigZagSequence([1,4,7,3,5,6,2]))
+console.log(findZigZagSequence([1,4,7,8,8,3,5,6,2]))
