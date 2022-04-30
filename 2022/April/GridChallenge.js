@@ -13,19 +13,32 @@ let grid1 = [
   'xywuv'
 ]
 
+let grid2 = [
+  'abc',
+  'lmp',
+  'qrt'
+]
+
+let grid3 = [
+  'mpxz',
+  'abcd',
+  'wlmf'
+]
+
 function gridChallenge(grid) {
   let result = 'YES'  // can omit this; not declare result
+  let rowLength = grid[0].length
 
   for (let i = 0; i < grid.length; i++) {
     grid[i] = grid[i].split('')   // grid now an array of arrays
     grid[i].sort()                // each array now sorted ascending
   }
 
-  for (let i = 0; i < grid.length; i++) {
+  for (let i = 0; i < rowLength; i++) {
     let newArr = []
     let anotherArr = []
 
-    for (let j = 0; j < grid[i].length; j++) {
+    for (let j = 0; j < grid.length; j++) {
       
       newArr.push(grid[j][i])
       anotherArr.push(grid[j][i])
@@ -43,3 +56,5 @@ function gridChallenge(grid) {
 }
 
 console.log(gridChallenge(grid1))
+console.log(gridChallenge(grid2))
+console.log(gridChallenge(grid3))
