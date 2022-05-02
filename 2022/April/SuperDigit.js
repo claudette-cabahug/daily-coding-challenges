@@ -12,10 +12,26 @@ int: the super digit of n repeated k times
 */
 
 function superDigit(n, k) {
-  let stringArr = n.split('')
+  let numberArr = n.split('').map(Number) // ['1', '4', '8'] --> [1, 4, 8]
+  let initialSum = numberArr.reduce((a, b) => a + b)  // 13
+  let finalSum = initialSum * k // 39
+  let splitFinalSum = finalSum.toString().split('').map(Number) // [3, 9]
+  let result = 0
+
+  for (let i = 0; i < splitFinalSum.length; i++) {
+    if (splitFinalSum.length > 1) {
+      result = splitFinalSum.reduce((a, b) => a + b) 
+      if (result > 9) {
+        result = result.toString().split('').map(Number)
+        result = result.reduce((a, b) => a + b)
+      } 
+    } else {
+      result = splitFinalSum[0]
+    }
+  }
   
-  
-  // console.log(splitString)
+  return result
 }
 
-console.log(superDigit('148', 3))
+console.log(superDigit('148', 3)) // 3
+console.log(superDigit('9875', 4))  // 8
