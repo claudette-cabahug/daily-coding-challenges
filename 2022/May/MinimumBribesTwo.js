@@ -1,3 +1,7 @@
+// test cases initially passed
+// out of 11, 4 fails - terminated due to timeout
+// Your code did not execute within the time limits. Please optimize your code.
+
 function minimumBribes(q) {
   let numbersBribed
   let totalBribes = []
