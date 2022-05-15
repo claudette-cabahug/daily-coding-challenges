@@ -6,9 +6,11 @@ Example
 headA refers to 1 - 3 - 7 - null
 headB refers to 1 - 2 - null
 A & B both are references to the head of a list
-The new list is 1 - 1 -2 - 3 - 7 - null
+The new list is 1 - 1 - 2 - 3 - 7 - null
 
 Returns SinglyLinkedListNode pointer: a reference to the head of the merged list
+
+
 */
 
 
@@ -23,7 +25,14 @@ Returns SinglyLinkedListNode pointer: a reference to the head of the merged list
  * }
  *
  */
+
+
+let list1 =  [1, 2, 3]
+let list2 =  [3, 4]
+
 function mergeLists(head1, head2) {
 
 
 }
+
+console.log(mergeLists(list1, list2)) // 1, 2, 3, 3, 4
