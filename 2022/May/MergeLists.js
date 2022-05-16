@@ -27,12 +27,18 @@ Returns SinglyLinkedListNode pointer: a reference to the head of the merged list
  */
 
 
-let list1 =  [1, 2, 3]
-let list2 =  [3, 4]
+// let list1 =  [1, 2, 3]
+// let list2 =  [3, 4]
 
 function mergeLists(head1, head2) {
-
-
+  if (!head1) return head2
+  if (!head2) return head1
+  
+  if (head1.data < head2.data) {
+      return {"data": head1.data, "next": mergeLists(head1.next, head2)}
+  } else {
+      return {"data": head2.data, "next": mergeLists(head1, head2.next)} 
+  }
 }
 
-console.log(mergeLists(list1, list2)) // 1, 2, 3, 3, 4
+// console.log(mergeLists(list1, list2)) // 1, 2, 3, 3, 4
