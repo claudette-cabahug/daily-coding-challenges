@@ -17,7 +17,7 @@ The function accepts 2D_INTEGER_ARRAY petrolpumps as parameter.
 Output: an integer which will be the smallest index of the petrol pump from which we can start the tour.
 */
 
-let pp0 = [ [ 1, 5 ], [ 10, 3 ], [ 3, 4 ] ] // petrol, distance
+let pp0 = [ [ 1, 5 ], [ 10, 3 ], [ 3, 4 ] ] // [petrol, distance]
 
 function truckTour(petrolpumps) {
   
@@ -43,4 +43,4 @@ function truckTour(petrolpumps) {
   return -1 // return this 
 }
 
-console.log(truckTour(pp0))
+console.log(truckTour(pp0)) // 1

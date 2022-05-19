@@ -25,10 +25,12 @@ Returns SinglyLinkedListNode pointer: a reference to the head of the merged list
  * }
  *
  */
+// valueN[] = {5,10,15,40}
+// valueM[] = {2,3,20}
+// Output: 2 3 5 10 15 20 40
 
-
-// let list1 =  [1, 2, 3]
-// let list2 =  [3, 4]
+let list1 =  [1, 2, 3]
+let list2 =  [3, 4]
 
 function mergeLists(head1, head2) {
   if (!head1) return head2
@@ -41,4 +43,4 @@ function mergeLists(head1, head2) {
   }
 }
 
-// console.log(mergeLists(list1, list2)) // 1, 2, 3, 3, 4
+console.log(mergeLists(list1, list2)) // 1, 2, 3, 3, 4
