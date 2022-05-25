@@ -1,3 +1,5 @@
+// Solution By Iteration
+
 function getNewNode(value) {
   return { data: value, next: null };
 }
@@ -42,3 +44,27 @@ function mergeLists(head1, head2) {
   return newhead;
 
 }
+
+class SinglyLinkedListNode {
+  constructor(data, next) {
+    this.data = data;
+    this.next = next;
+  }
+}
+
+let five = new SinglyLinkedListNode(5)
+let ten = new SinglyLinkedListNode(10)
+let fifteen = new SinglyLinkedListNode(15)
+let forty = new SinglyLinkedListNode(40)
+five.next = ten
+ten.next = fifteen
+fifteen.next = forty
+
+let two = new SinglyLinkedListNode(2)
+let three = new SinglyLinkedListNode(3)
+let twenty = new SinglyLinkedListNode(20)
+two.next = three
+three.next = twenty
+
+let result = mergeLists(five, two)
+console.log(result) // 1, 2, 3, 3, 4
