@@ -26,7 +26,6 @@ Returns SinglyLinkedListNode pointer: a reference to the head of the merged list
  */
 
 // Solution Using Recursion
-
 class SinglyLinkedListNode {
   constructor(data, next) {
     this.data = data;
