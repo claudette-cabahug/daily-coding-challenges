@@ -1,6 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
+export default function App() {
+  const firstName = "Joe"
+  const lastName = "Schmoe"
+
+  return (
+    <>
+      <h1>Hello {firstName} {lastName} </h1>
+    </>
+  )
+}
+
 function Header() {
   return (
     <header>
