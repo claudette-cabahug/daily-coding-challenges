@@ -6,9 +6,9 @@ function greeting(name) {
   
   if (currentHour >= 4 && currentHour < 12) {
     timeOfDay = "morning"
-  } else if (currentHour >= 12 && currentHour < 16) {
+  } else if (currentHour >= 12 && currentHour < 17) {
     timeOfDay = "afternoon"
-  } else if (currentHour >= 16 && currentHour < 19) {
+  } else if (currentHour >= 17 && currentHour < 19) {
     timeOfDay = "evening"
   } else {
     timeOfDay = "night"
