@@ -18,3 +18,8 @@ function greeting(name) {
 }
 
 console.log(greeting("Bob"))
+
+/*
+in react, param (name) is equal to props (immutable)
+whereas declared variables such as time of day are equivalent to state -- can be changed
+*/
