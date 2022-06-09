@@ -1,4 +1,4 @@
-/*
+
 Given two sorted linked lists consisting of N and M nodes respectively. 
 The task is to merge both of the list (in-place) and return head of the merged list.
 
@@ -30,4 +30,3 @@ Expected Auxilliary Space : O(1)
 Constraints:
 1 <= N, M <= 104
 1 <= Node's data <= 105
-*/
