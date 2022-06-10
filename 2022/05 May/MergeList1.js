@@ -69,4 +69,5 @@ console.log(result)
 Introduction to Linked List: https://www.youtube.com/watch?v=NobHlGUjV3g 
 Data Structures: Arrays vs Linked Lists: https://www.youtube.com/watch?v=lC-yYCOnN8Q 
 Linked List in C/C++ - Inserting a node at beginning: https://www.youtube.com/watch?v=cAZ8CyDY56s 
+Implementing Linked List in JS: https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/
 */
